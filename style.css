@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@400..900,1&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fbff;
+}
+
+body {
+  font-family: 'Recursive', monospace;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.progress {
+  font-size: 0.85em;
+  color: #668;
+  margin:1.6em;
+}
+.redo {
+  color: #557;
+  margin: 1.6em;
+}
+
+.progress div {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+@keyframes blinking {
+  0% {
+    border-left: 2px solid #668;
+ }
+  50% {
+     border-left: 2px solid rgba(255,255,255,0);
+  }
+  100% {
+    border-left: 2px solid #668;
+  }
+}
+.wip {
+  color: #668;
+  animation: blinking 1s infinite;
+/*   animation-duration: 2s; */
+  border-left: 2px solid #668;
+/*   border-left: 2px solid #99a; */
+  padding: 2px 0px;
+/*   font-weight: 700; */
+}
+.done {
+  color: #ccd;
+/*   color: #449988; */
+/*   font-weight: 700; */
+}
+
+html, body {
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+/*   min-width: 700px; */
+}
+
+nav {
+  text-align: center;
+  margin: 1em;
+}
+.logomark {
+/*   font-weight: 700; */
+  font-size: 1.6em;
+  font-weight: 500;
+}
+.project {
+  text-align: center;
+  margin: 2em;
+}
+.title {
+  line-height: 1.6em;
+}
+.description {
+  font-size: 0.85em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
