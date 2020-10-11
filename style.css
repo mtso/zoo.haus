@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@400..900,1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 html, body {
   margin: 0;
@@ -59,22 +60,43 @@ html, body {
   width: 100%;
 }
 .container {
-  margin: 0 auto;
+  margin: 0 auto 200px;
+  max-width: 742px;
 /*   min-width: 700px; */
 }
 
 nav {
   text-align: center;
-  margin: 1em;
+  margin: 1em 1em 1.8em;
+}
+nav a {
+  margin: 0.6em;
+}
+nav a:hover {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #668;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #668;
 }
 .logomark {
 /*   font-weight: 700; */
   font-size: 1.6em;
   font-weight: 500;
+
+  background: url(./images/zoo_logo.svg);
+  display: block;
+  background-size: 52px 52px;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto; 
+}
+.container-cell {
+  margin: 2em auto;
 }
 .project {
   text-align: center;
-  margin: 2em;
+  margin: 2em auto;
   font-weight: 500;
 }
 .title {
@@ -87,4 +109,56 @@ nav {
 a {
   color: #000;
   text-decoration: none;
+}
+
+/* News */
+.post {
+}
+.post-title {
+  text-align: center;
+  margin: 1.4em auto 0.7em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  max-width: 9em;
+}
+.post-content {
+  display: flex;
+  /* flex-direction: row; */
+}
+.post-content-column {
+  font-size: 0.85em;
+  text-align: left;
+  text-indent: 1em;
+  font-weight: 400;
+  width: 48%;
+  margin: 1em;
+}
+.post-date {
+  text-align: center;
+  font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+  .post-content,
+  .post-content-column
+  {
+    display: block;
+    /* .col { */
+    width: 96%;
+    margin-left: 2%;
+    /* margin: 1em; */
+    /* margin: 0;
+    margin: 0 0px 10px 10px;
+    padding-right: 30px; */
+    /* } */
+  } 
+  .post-content-column p 
+  {
+    /* display: inline-block; */
+    /* .col { */
+    /* width: 100%; */
+    /* margin: 1em; */
+    /* margin: 0; */
+    /* } */
+  }
 }
