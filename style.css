@@ -84,7 +84,7 @@ nav a:hover {
   font-size: 1.6em;
   font-weight: 500;
 
-  background: url(./images/zoo_logo.svg);
+  background: url(/images/zoo_logo.svg);
   display: block;
   background-size: 52px 52px;
   width: 52px;
