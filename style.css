@@ -115,16 +115,30 @@ a {
 /* News */
 .post {
 }
+.post-mark {
+  margin: 1em auto;
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  border-top: 4px black solid;
+}
 .post-title {
   text-align: center;
-  margin: 1.4em auto 0.7em;
+  margin: 3em auto 0.7em;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2em;
   max-width: 9em;
 }
 .post-content {
   display: flex;
-  /* flex-direction: row; */
+}
+.post-content-column-full {
+  font-size: 0.85em;
+  text-align: left;
+  text-indent: 1em;
+  font-weight: 400;
+  width: 96.5%;
+  margin: 0.4em 1em;
 }
 .post-content-column {
   font-size: 0.85em;
@@ -132,34 +146,27 @@ a {
   text-indent: 1em;
   font-weight: 400;
   width: 48%;
-  margin: 1em;
+  margin: 0.4em 1em;
 }
 .post-date {
   text-align: center;
   font-size: 0.85em;
 }
+.post-image-full {
+  width: 100%;
+}
+.image-bg-pink {
+  background-color: #dfcccc;
+}
 
 @media (max-width: 768px) {
   .post-content,
-  .post-content-column
-  {
+  .post-content-column,
+  .post-content-column-full {
     display: block;
-    /* .col { */
     width: 96%;
     margin-left: 2%;
-    /* margin: 1em; */
-    /* margin: 0;
-    margin: 0 0px 10px 10px;
-    padding-right: 30px; */
-    /* } */
   } 
-  .post-content-column p 
-  {
-    /* display: inline-block; */
-    /* .col { */
-    /* width: 100%; */
-    /* margin: 1em; */
-    /* margin: 0; */
-    /* } */
+  .post-content-column p {
   }
 }
