@@ -69,12 +69,14 @@ nav {
   text-align: center;
   margin: 1em 1em 1.8em;
 }
-nav a {
+nav a, .sub-nav a {
+  color: #000;
   margin: 0.6em;
   font-weight: 550;
   line-height: 2em;
+  text-decoration: none;
 }
-nav a:hover {
+nav a:hover, .sub-nav a:hover {
   /* text-decoration: underline; */
   border-bottom: 2px solid #668;
 }
@@ -109,8 +111,8 @@ nav a:hover {
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+  /*color: #000;*/
+  /*text-decoration: none;*/
 }
 
 /* News */
@@ -132,6 +134,7 @@ a {
 }
 .post-content {
   display: flex;
+  margin: 1em auto;
 }
 .post-content-column-full {
   font-size: 0.85em;
@@ -170,4 +173,38 @@ a {
   } 
   .post-content-column p {
   }
+}
+
+/* more posts */
+
+.post-warning {
+  width: 100%;
+  background-color: #f5f5bf;
+  text-align: center;
+  padding: 0 1.4em;
+}
+
+.post-warning-icon {
+  display: inline-block;
+}
+
+/* File Downloads */
+
+.file-downloads {
+  width: 100%;
+  background-color: #e9ebef;
+  padding: 1.4em;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.file-downloads-description {
+  display: block;
+}
+
+.file-downloads a {
+  display: inline-block;
+  /*margin: 1em;*/
+  padding: 1em;
+  background-color: #d9dbef;
 }
