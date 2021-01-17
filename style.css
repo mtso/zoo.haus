@@ -196,6 +196,9 @@ p > a:hover {
 .image-bg-pink {
   background-color: #dfcccc;
 }
+.image-bg-purple {
+  background-color: #d0ccdf;
+}
 
 @media (max-width: 768px) {
   .post-content,

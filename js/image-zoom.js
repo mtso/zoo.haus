@@ -16,7 +16,7 @@
       image.style.cursor = "zoom-in";
 
       var zoomSrc = image.getAttribute("data-zoom-src");
-      var pop = createZoom(zoomSrc);
+      var pop = createZoom(zoomSrc, image.getAttribute("data-zoom-bgcolor"));
       image.addEventListener("click", toggle);
       pop.addEventListener("click", toggle);
 
@@ -31,7 +31,7 @@
       }
     });
 
-    function createZoom(src) {
+    function createZoom(src, bgcolor) {
       var pop = document.createElement("div");
       var popImageContainer = document.createElement("div");
       var popImage = document.createElement("img");
@@ -39,7 +39,7 @@
 
       popImage.style.width = "100%";
       popImage.style.height = "auto";
-      popImage.style.backgroundColor = "#dfcccc";
+      popImage.style.backgroundColor = bgcolor || "#d0ccdf"; /* "#dfcccc"; */
       popImage.style.margin = "auto";
 
       popImageContainer.style.height = "auto";
