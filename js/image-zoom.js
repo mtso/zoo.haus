@@ -33,20 +33,34 @@
 
     function createZoom(src) {
       var pop = document.createElement("div");
+      var popImageContainer = document.createElement("div");
       var popImage = document.createElement("img");
+      popImage.src = src;
+
       popImage.style.width = "100%";
       popImage.style.height = "auto";
       popImage.style.backgroundColor = "#dfcccc";
-      popImage.src = src;
+      popImage.style.margin = "auto";
+
+      popImageContainer.style.height = "auto";
+      popImageContainer.style.display = "inline-block";
+      popImageContainer.style.margin = "auto";
+      popImageContainer.style.padding = "20px";
+
+      pop.style.display = "flex";
+      pop.style.justifyContent = "center";
+      pop.style.alignItems = "center";
       pop.style.position = "fixed";
       pop.style.left = "0";
       pop.style.top = "0";
       pop.style.width = "100%";
       pop.style.height = "100%";
-      pop.style.backgroundColor = "rgba(255,255,255,0.8)";
+      pop.style.backgroundColor = "rgba(215,215,230,0.8)";
       pop.style.overflow = "scroll";
-      pop.appendChild(popImage);
       pop.style.cursor = "zoom-out";
+
+      popImageContainer.appendChild(popImage);
+      pop.appendChild(popImageContainer);
       return pop;
     }
   }
