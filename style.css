@@ -145,6 +145,7 @@ p > a:hover {
   display: flex;
   margin: 0 auto;
   font-size: 1em;
+  flex-flow: row nowrap;
 }
 .post-content-column-full {
   /* font-size: 0.85em; */
@@ -159,12 +160,31 @@ p > a:hover {
   font-weight: 400;
   margin: 0.4em 0.4em;
 }
+.post-content-column-title {
+  /* font-size: 0.85em; */
+  text-align: left;
+  font-weight: 600;
+  flex-grow: 0;
+  flex-basis: 400px;
+  margin: 1.4em 1em 2em;
+  /* margin: 0.4em 0.4em; */
+}
+.post-content-column-fill {
+  margin: 1.4em 1em 2em;
+  text-align: justify;
+  flex-grow: 1;
+}
+.post-content-column-fill ul,
+.post-content-column-text ul {
+  text-align: left;
+}
 .post-content-column-text {
   /* font-size: 0.85em; */
   text-align: left;
   font-weight: 400;
   width: 48%;
-  margin: 0.4em 0.4em;
+  margin: 0.4em 1.2em;
+  text-align: justify;
 }
 .post-date {
   text-align: center;
