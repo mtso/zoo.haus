@@ -59,7 +59,12 @@
       pop.style.overflow = "scroll";
       pop.style.cursor = "zoom-out";
 
+      var raw = document.createElement("a");
+      raw.setAttribute("href", src);
+      raw.innerText = "View Raw Image";
+
       popImageContainer.appendChild(popImage);
+      popImageContainer.appendChild(raw);
       pop.appendChild(popImageContainer);
       return pop;
     }
