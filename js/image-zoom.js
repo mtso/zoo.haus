@@ -9,8 +9,6 @@
     for (var i = 0; i < allImages.length; ++i) {
       if (null !== allImages[i].getAttribute("data-zoom-src")) {
         images.push(allImages[i]);
-      } else if (null !== allImages[i].getAttribute("data-zoom")) {
-      	images.push(allImages[i]);
       }
     }
 
