@@ -7,14 +7,18 @@
     var dataShowName = "data-zoom-show";
 
     for (var i = 0; i < allImages.length; ++i) {
-      if (null !== allImages[i].getAttribute("data-zoom")) {
+      if (null !== allImages[i].getAttribute("data-zoom-src")) {
+        images.push(allImages[i]);
+      } else if (null !== allImages[i].getAttribute("data-zoom")) {
       	images.push(allImages[i]);
       }
     }
 
     images.forEach(function(image) {
       image.style.cursor = "zoom-in";
-      var pop = createZoom(image.src);
+
+      var zoomSrc = image.getAttribute("data-zoom-src");
+      var pop = createZoom(zoomSrc);
       image.addEventListener("click", toggle);
       pop.addEventListener("click", toggle);
 
@@ -34,6 +38,7 @@
       var popImage = document.createElement("img");
       popImage.style.width = "100%";
       popImage.style.height = "auto";
+      popImage.style.backgroundColor = "#dfcccc";
       popImage.src = src;
       pop.style.position = "fixed";
       pop.style.left = "0";
