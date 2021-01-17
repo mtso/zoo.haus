@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@400..900,1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); */
 
 html, body {
   margin: 0;
@@ -8,7 +10,9 @@ html, body {
 }
 
 body {
-  font-family: 'Recursive', monospace;
+  /* font-family: 'Recursive', sans-serif;, monospace; */
+  /* font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Inter', sans-serif;
 }
 
 table {
@@ -110,9 +114,14 @@ nav a:hover, .sub-nav a:hover {
   font-size: 0.85em;
 }
 
-a {
-  /*color: #000;*/
-  /*text-decoration: none;*/
+.post a, .post-date a, .nav-link, p > a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #aab;
+
+}
+p > a:hover {
+  border-bottom: 2px solid #668;
 }
 
 /* News */
@@ -134,23 +143,28 @@ a {
 }
 .post-content {
   display: flex;
-  margin: 1em auto;
+  margin: 0 auto;
+  font-size: 1em;
 }
 .post-content-column-full {
-  font-size: 0.85em;
+  /* font-size: 0.85em; */
   text-align: left;
-  text-indent: 1em;
   font-weight: 400;
-  width: 96.5%;
-  margin: 0.4em 1em;
+  /* width: 96.5%; */
+  margin: 0.4em 0.4em;
 }
 .post-content-column {
-  font-size: 0.85em;
+  /* font-size: 0.85em; */
   text-align: left;
-  text-indent: 1em;
+  font-weight: 400;
+  margin: 0.4em 0.4em;
+}
+.post-content-column-text {
+  /* font-size: 0.85em; */
+  text-align: left;
   font-weight: 400;
   width: 48%;
-  margin: 0.4em 1em;
+  margin: 0.4em 0.4em;
 }
 .post-date {
   text-align: center;
@@ -166,7 +180,8 @@ a {
 @media (max-width: 768px) {
   .post-content,
   .post-content-column,
-  .post-content-column-full {
+  .post-content-column-full,
+  .post-content-column-text {
     display: block;
     width: 96%;
     margin-left: 2%;
@@ -186,6 +201,22 @@ a {
 
 .post-warning-icon {
   display: inline-block;
+}
+
+/* lists */
+
+ul {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+ul > li {
+  text-indent: -2.5em;
+}
+ul > li:before {
+  content: "– ";
+  text-indent: -2.5em;
 }
 
 /* File Downloads */
