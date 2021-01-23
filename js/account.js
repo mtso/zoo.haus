@@ -11,7 +11,7 @@
 	    return result;
 	}
 
-	const apiUrl = 'http://localhost:3000'
+	const apiUrl = 'https://kakari.herokuapp.com'
 
 	window.addEventListener('load', (e) => {
 
