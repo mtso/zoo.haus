@@ -1,7 +1,7 @@
 import { h, text, app } from "https://unpkg.com/hyperapp"
 import { request } from "https://unpkg.com/@hyperapp/http"
 
-const API_URL = "https://api.zoo.haus";
+const API_URL = "https://kakari.herokuapp.com/";
 // const API_URL = "http://localhost:3000";
 
 const routing = (function() {
