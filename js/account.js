@@ -11,7 +11,7 @@
 	    return result;
 	}
 
-	const apiUrl = 'https://kakari.herokuapp.com'
+	const apiUrl = 'https://kakari-ku9jm.ondigitalocean.app/'
 
 	window.addEventListener('load', (e) => {
 
