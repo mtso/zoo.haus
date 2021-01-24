@@ -11,7 +11,7 @@
 	    return result;
 	}
 
-	const apiUrl = 'https://kakari-ku9jm.ondigitalocean.app'
+	const apiUrl = 'https://api.zoo.haus'
 
 	window.addEventListener('load', (e) => {
 
